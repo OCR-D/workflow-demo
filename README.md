@@ -1,6 +1,8 @@
 # workflow-demo
 [Taverna](https://taverna.incubator.apache.org/) Workflow Beispiel zu Demonstrationszwecken
 
+![Workflow diagram](https://user-images.githubusercontent.com/952378/30741474-3393ee40-9f95-11e7-9718-2ad5781bd0d7.png)
+
 Es werden die folgenden Softwarekomponenten benötigt:
 
 * [Java](https://java.com/download)
