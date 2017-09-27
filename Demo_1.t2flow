@@ -1,4 +1,4 @@
-<workflow xmlns="http://taverna.sf.net/2008/xml/t2flow" version="1" producedBy="taverna-core-2.5.0"><dataflow id="e6cdf4e3-e50f-4336-9fe3-477e8cf84d30" role="top"><name>_DEMO__Tesseract_OCR</name><inputPorts><port><name>Image</name><depth>0</depth><granularDepth>0</granularDepth><annotations><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+<workflow xmlns="http://taverna.sf.net/2008/xml/t2flow" version="1" producedBy="taverna-core-2.5.0"><dataflow id="787e6c17-b322-4d1b-aab8-afac43fdaf70" role="top"><name>_DEMO__Tesseract_OCR</name><inputPorts><port><name>Image</name><depth>0</depth><granularDepth>0</granularDepth><annotations><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
   <annotationAssertions>
     <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
       <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.FreeTextDescription">
@@ -23,10 +23,10 @@
 </net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain></annotations></port><port><name>Ground_Truth</name><depth>0</depth><granularDepth>0</granularDepth><annotations><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
   <annotationAssertions>
     <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.ExampleValue">
-        <text>test.txt</text>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.FreeTextDescription">
+        <text>Ground Truth text</text>
       </annotationBean>
-      <date>2017-09-21 23:01:46.462 UTC</date>
+      <date>2017-09-27 17:05:12.147 UTC</date>
       <creators />
       <curationEventList />
     </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
@@ -34,10 +34,10 @@
 </net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
   <annotationAssertions>
     <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.FreeTextDescription">
-        <text>Ground Truth text</text>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.ExampleValue">
+        <text>test.txt</text>
       </annotationBean>
-      <date>2017-09-27 17:05:12.147 UTC</date>
+      <date>2017-09-21 23:01:46.462 UTC</date>
       <creators />
       <curationEventList />
     </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
@@ -67,6 +67,17 @@
 </net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain></annotations></port><port><name>OCR_Engine_Mode</name><depth>0</depth><granularDepth>0</granularDepth><annotations><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
   <annotationAssertions>
     <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.ExampleValue">
+        <text>3</text>
+      </annotationBean>
+      <date>2017-09-21 22:29:45.156 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
       <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.FreeTextDescription">
         <text>OCR Modus:
   0    Original Tesseract only.
@@ -79,24 +90,13 @@
       <curationEventList />
     </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
   </annotationAssertions>
-</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
-  <annotationAssertions>
-    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.ExampleValue">
-        <text>3</text>
-      </annotationBean>
-      <date>2017-09-21 22:29:45.156 UTC</date>
-      <creators />
-      <curationEventList />
-    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-  </annotationAssertions>
 </net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain></annotations></port></inputPorts><outputPorts><port><name>Text</name><lastPredictedDepth>0</lastPredictedDepth><annotations /></port><port><name>Evaluation</name><lastPredictedDepth>0</lastPredictedDepth><annotations /></port></outputPorts><processors><processor><name>Tesseract_OCR</name><inputPorts><port><name>image</name><depth>0</depth></port><port><name>lang</name><depth>0</depth></port><port><name>oem</name><depth>0</depth></port></inputPorts><outputPorts><port><name>ocr</name><depth>0</depth><granularDepth>0</granularDepth></port></outputPorts><annotations><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
   <annotationAssertions>
     <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
       <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.FreeTextDescription">
-        <text>Tesseract ist eine freie Software zur Texterkennung.</text>
+        <text>Tesseract (https://github.com/tesseract-ocr/tesseract) ist eine freie, quelloffene Software zur Texterkennung.</text>
       </annotationBean>
-      <date>2017-09-21 23:04:28.898 UTC</date>
+      <date>2017-09-27 17:10:02.203 UTC</date>
       <creators />
       <curationEventList />
     </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
@@ -252,104 +252,13 @@ int ld = similarity.getLevenshteinDistance(gt,ocr);</script>
   <initialDelay>1000</initialDelay>
   <maxDelay>5000</maxDelay>
   <maxRetries>0</maxRetries>
-</net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.RetryConfig></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.5</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Invoke</class><configBean encoding="xstream"><null xmlns="" /></configBean></dispatchLayer></dispatchStack><iterationStrategyStack><iteration><strategy><cross><port name="ocr" depth="0" /><port name="gt" depth="0" /></cross></strategy></iteration></iterationStrategyStack></processor></processors><conditions /><datalinks><datalink><sink type="processor"><processor>Tesseract_OCR</processor><port>image</port></sink><source type="dataflow"><port>Image</port></source></datalink><datalink><sink type="processor"><processor>Tesseract_OCR</processor><port>lang</port></sink><source type="dataflow"><port>Sprache</port></source></datalink><datalink><sink type="processor"><processor>Tesseract_OCR</processor><port>oem</port></sink><source type="dataflow"><port>OCR_Engine_Mode</port></source></datalink><datalink><sink type="processor"><processor>Levenshtein_Distanz</processor><port>ocr</port></sink><source type="processor"><processor>Tesseract_OCR</processor><port>ocr</port></source></datalink><datalink><sink type="processor"><processor>Levenshtein_Distanz</processor><port>gt</port></sink><source type="dataflow"><port>Ground_Truth</port></source></datalink><datalink><sink type="dataflow"><port>Text</port></sink><source type="processor"><processor>Tesseract_OCR</processor><port>ocr</port></source></datalink><datalink><sink type="dataflow"><port>Evaluation</port></sink><source type="processor"><processor>Levenshtein_Distanz</processor><port>ld</port></source></datalink></datalinks><annotations><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
-  <annotationAssertions>
-    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.Author">
-        <text>OCR-D</text>
-      </annotationBean>
-      <date>2017-09-21 21:24:56.162 UTC</date>
-      <creators />
-      <curationEventList />
-    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-  </annotationAssertions>
-</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
-  <annotationAssertions>
-    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.FreeTextDescription">
-        <text>Einfaches Workflow-Beispiel bestehend aus den folgenden Komponenten: 
-- OCR Verarbeitung mit Tesseract
-- Evaluation des OCR-Ergebnis mit Ground Truth
-</text>
-      </annotationBean>
-      <date>2017-09-21 21:25:59.776 UTC</date>
-      <creators />
-      <curationEventList />
-    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-  </annotationAssertions>
-</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+</net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.RetryConfig></configBean></dispatchLayer><dispatchLayer><raven><group>net.sf.taverna.t2.core</group><artifact>workflowmodel-impl</artifact><version>1.5</version></raven><class>net.sf.taverna.t2.workflowmodel.processor.dispatch.layers.Invoke</class><configBean encoding="xstream"><null xmlns="" /></configBean></dispatchLayer></dispatchStack><iterationStrategyStack><iteration><strategy><cross><port name="ocr" depth="0" /><port name="gt" depth="0" /></cross></strategy></iteration></iterationStrategyStack></processor></processors><conditions /><datalinks><datalink><sink type="processor"><processor>Tesseract_OCR</processor><port>image</port></sink><source type="dataflow"><port>Image</port></source></datalink><datalink><sink type="processor"><processor>Tesseract_OCR</processor><port>lang</port></sink><source type="dataflow"><port>Sprache</port></source></datalink><datalink><sink type="processor"><processor>Tesseract_OCR</processor><port>oem</port></sink><source type="dataflow"><port>OCR_Engine_Mode</port></source></datalink><datalink><sink type="processor"><processor>Levenshtein_Distanz</processor><port>ocr</port></sink><source type="processor"><processor>Tesseract_OCR</processor><port>ocr</port></source></datalink><datalink><sink type="processor"><processor>Levenshtein_Distanz</processor><port>gt</port></sink><source type="dataflow"><port>Ground_Truth</port></source></datalink><datalink><sink type="dataflow"><port>Text</port></sink><source type="processor"><processor>Tesseract_OCR</processor><port>ocr</port></source></datalink><datalink><sink type="dataflow"><port>Evaluation</port></sink><source type="processor"><processor>Levenshtein_Distanz</processor><port>ld</port></source></datalink></datalinks><annotations><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
   <annotationAssertions>
     <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
       <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
-        <identification>7ab83475-6ae9-4f7a-915f-3db525c41c4a</identification>
+        <identification>253febe6-fcdf-4f52-b857-e55d6bea5f93</identification>
       </annotationBean>
-      <date>2017-09-21 22:23:52.809 UTC</date>
-      <creators />
-      <curationEventList />
-    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-  </annotationAssertions>
-</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
-  <annotationAssertions>
-    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
-        <identification>0dce446d-2b57-4ab4-b3db-3df7027d6ca3</identification>
-      </annotationBean>
-      <date>2017-09-25 13:55:58.558 UTC</date>
-      <creators />
-      <curationEventList />
-    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-  </annotationAssertions>
-</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
-  <annotationAssertions>
-    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
-        <identification>d656e6d3-57f2-4c68-982e-629303539eba</identification>
-      </annotationBean>
-      <date>2017-09-21 22:58:32.414 UTC</date>
-      <creators />
-      <curationEventList />
-    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-  </annotationAssertions>
-</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
-  <annotationAssertions>
-    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
-        <identification>e0b2bdab-bcfa-4656-a4ef-2f57f697ea8f</identification>
-      </annotationBean>
-      <date>2017-09-21 21:18:01.750 UTC</date>
-      <creators />
-      <curationEventList />
-    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-  </annotationAssertions>
-</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
-  <annotationAssertions>
-    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
-        <identification>35fb459d-98a4-408c-a92a-59a56e057f59</identification>
-      </annotationBean>
-      <date>2017-09-21 21:26:12.178 UTC</date>
-      <creators />
-      <curationEventList />
-    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-  </annotationAssertions>
-</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
-  <annotationAssertions>
-    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.DescriptiveTitle">
-        <text>[DEMO] Tesseract OCR mit Evaluation</text>
-      </annotationBean>
-      <date>2017-09-21 21:25:55.175 UTC</date>
-      <creators />
-      <curationEventList />
-    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-  </annotationAssertions>
-</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
-  <annotationAssertions>
-    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
-        <identification>d18188fd-e295-4a2f-a54b-0adf868b4312</identification>
-      </annotationBean>
-      <date>2017-09-21 23:01:02.407 UTC</date>
+      <date>2017-09-21 21:36:12.740 UTC</date>
       <creators />
       <curationEventList />
     </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
@@ -369,6 +278,28 @@ int ld = similarity.getLevenshteinDistance(gt,ocr);</script>
   <annotationAssertions>
     <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
       <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
+        <identification>9af89f16-41c6-4753-889d-c5e48f77daff</identification>
+      </annotationBean>
+      <date>2017-09-21 23:01:50.55 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
+        <identification>787e6c17-b322-4d1b-aab8-afac43fdaf70</identification>
+      </annotationBean>
+      <date>2017-09-27 17:10:05.526 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
         <identification>f54cfc9a-f99c-49d4-b288-a34b81f3a3d3</identification>
       </annotationBean>
       <date>2017-09-21 23:09:46.885 UTC</date>
@@ -380,9 +311,9 @@ int ld = similarity.getLevenshteinDistance(gt,ocr);</script>
   <annotationAssertions>
     <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
       <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
-        <identification>253febe6-fcdf-4f52-b857-e55d6bea5f93</identification>
+        <identification>35fb459d-98a4-408c-a92a-59a56e057f59</identification>
       </annotationBean>
-      <date>2017-09-21 21:36:12.740 UTC</date>
+      <date>2017-09-21 21:26:12.178 UTC</date>
       <creators />
       <curationEventList />
     </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
@@ -391,9 +322,53 @@ int ld = similarity.getLevenshteinDistance(gt,ocr);</script>
   <annotationAssertions>
     <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
       <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
-        <identification>2038c7b4-1ee0-42af-aece-470c3c520df6</identification>
+        <identification>e6cdf4e3-e50f-4336-9fe3-477e8cf84d30</identification>
       </annotationBean>
-      <date>2017-09-21 23:04:33.54 UTC</date>
+      <date>2017-09-27 17:05:58.178 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.Author">
+        <text>OCR-D</text>
+      </annotationBean>
+      <date>2017-09-21 21:24:56.162 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
+        <identification>63202511-cf73-4356-a0fb-e9cbf41d6a38</identification>
+      </annotationBean>
+      <date>2017-09-21 22:23:22.97 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
+        <identification>0dce446d-2b57-4ab4-b3db-3df7027d6ca3</identification>
+      </annotationBean>
+      <date>2017-09-25 13:55:58.558 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
+        <identification>d18188fd-e295-4a2f-a54b-0adf868b4312</identification>
+      </annotationBean>
+      <date>2017-09-21 23:01:02.407 UTC</date>
       <creators />
       <curationEventList />
     </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
@@ -413,6 +388,53 @@ int ld = similarity.getLevenshteinDistance(gt,ocr);</script>
   <annotationAssertions>
     <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
       <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
+        <identification>e0b2bdab-bcfa-4656-a4ef-2f57f697ea8f</identification>
+      </annotationBean>
+      <date>2017-09-21 21:18:01.750 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.FreeTextDescription">
+        <text>Einfaches Workflow-Beispiel bestehend aus den folgenden Komponenten: 
+- OCR Verarbeitung mit Tesseract
+- Evaluation des OCR-Ergebnis mit Ground Truth
+</text>
+      </annotationBean>
+      <date>2017-09-21 21:25:59.776 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain><annotation_chain encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.DescriptiveTitle">
+        <text>[DEMO] Tesseract OCR mit Evaluation</text>
+      </annotationBean>
+      <date>2017-09-21 21:25:55.175 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
+        <identification>d656e6d3-57f2-4c68-982e-629303539eba</identification>
+      </annotationBean>
+      <date>2017-09-21 22:58:32.414 UTC</date>
+      <creators />
+      <curationEventList />
+    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+  </annotationAssertions>
+</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
+  <annotationAssertions>
+    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
+      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
         <identification>8315e708-0b48-42b7-960d-2cf0cd32347f</identification>
       </annotationBean>
       <date>2017-09-21 20:56:02.635 UTC</date>
@@ -424,9 +446,9 @@ int ld = similarity.getLevenshteinDistance(gt,ocr);</script>
   <annotationAssertions>
     <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
       <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
-        <identification>9af89f16-41c6-4753-889d-c5e48f77daff</identification>
+        <identification>2038c7b4-1ee0-42af-aece-470c3c520df6</identification>
       </annotationBean>
-      <date>2017-09-21 23:01:50.55 UTC</date>
+      <date>2017-09-21 23:04:33.54 UTC</date>
       <creators />
       <curationEventList />
     </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
@@ -435,20 +457,9 @@ int ld = similarity.getLevenshteinDistance(gt,ocr);</script>
   <annotationAssertions>
     <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
       <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
-        <identification>e6cdf4e3-e50f-4336-9fe3-477e8cf84d30</identification>
+        <identification>7ab83475-6ae9-4f7a-915f-3db525c41c4a</identification>
       </annotationBean>
-      <date>2017-09-27 17:05:58.178 UTC</date>
-      <creators />
-      <curationEventList />
-    </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-  </annotationAssertions>
-</net.sf.taverna.t2.annotation.AnnotationChainImpl></annotation_chain_2_2><annotation_chain_2_2 encoding="xstream"><net.sf.taverna.t2.annotation.AnnotationChainImpl xmlns="">
-  <annotationAssertions>
-    <net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
-      <annotationBean class="net.sf.taverna.t2.annotation.annotationbeans.IdentificationAssertion">
-        <identification>63202511-cf73-4356-a0fb-e9cbf41d6a38</identification>
-      </annotationBean>
-      <date>2017-09-21 22:23:22.97 UTC</date>
+      <date>2017-09-21 22:23:52.809 UTC</date>
       <creators />
       <curationEventList />
     </net.sf.taverna.t2.annotation.AnnotationAssertionImpl>
