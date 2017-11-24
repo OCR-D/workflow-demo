@@ -23,10 +23,13 @@ Nach der erfolgreichen Installation der oben genannten Softwarekomponenten sind 
 ## Workflows
 
 ### Workflow ``Demo_1.t2flow``
+This workflow takes an image and ground truth text as input, performs OCR using Tesseract 4.0 and compares the OCR output to the ground truth using Levensthein distance measure.
 ![Workflow 1 diagram](https://user-images.githubusercontent.com/952378/30741474-3393ee40-9f95-11e7-9718-2ad5781bd0d7.png)
 
 ### Workflow ``Demo_2.t2flow``
+This workflow takes an image and ground truth text as input, performs binarization of the image using Kraken's 'nlbin' method, subsequently submits the bitonal image to OCR using Tesseract 3, Tesseract 4 and Kraken and then compares each OCR output with the ground truth using Levenshtein distance measure.
 ![Workflow 2 diagram](https://user-images.githubusercontent.com/952378/33178231-ba6622ca-d065-11e7-9239-2a8c3cc9e636.png)
 
 ### Workflow ``Demo_3.t2flow``
+This workflow takes an image as input, performs image optimization (cropping, deskewing, despeckling) with ScanTailor, binarizes the image using Kraken's 'nlbin' method, subsequently submits the bitonal image to OCR using Tesseract 4 and Kraken and finally creates an optimal OCR result by merging the two OCR outputs based on a dictionary.
 ![Workflow 3 diagram](https://user-images.githubusercontent.com/952378/33178131-4d911268-d065-11e7-9bf9-c510b9a93bd1.png)
