@@ -218,7 +218,7 @@ int ld = StringUtils.getLevenshteinDistance(gt, ocr);</script>
   <useCaseDescription>
     <usecaseid />
     <description />
-    <command>/usr/local/bin/kraken -i %%image%% bw.tif binarize</command>
+    <command>kraken -i %%image%% bw.tif binarize</command>
     <preparingTimeoutInSeconds>1200</preparingTimeoutInSeconds>
     <executionTimeoutInSeconds>1800</executionTimeoutInSeconds>
     <tags>
@@ -711,7 +711,7 @@ int ld = StringUtils.getLevenshteinDistance(gt, ocr);</script>
   <useCaseDescription>
     <usecaseid />
     <description />
-    <command>/usr/local/bin/kraken -i %%image%% ocr.txt binarize segment ocr</command>
+    <command>kraken -i %%image%% ocr.txt binarize segment ocr</command>
     <preparingTimeoutInSeconds>1200</preparingTimeoutInSeconds>
     <executionTimeoutInSeconds>1800</executionTimeoutInSeconds>
     <tags>
