@@ -1,6 +1,6 @@
 # workflow-demo
 
-> [Taverna](https://taverna.incubator.apache.org/) Workflow Beispiele zu Demonstrationszwecken
+[Taverna](https://taverna.incubator.apache.org/) Workflow Beispiele zu Demonstrationszwecken
 
 <!-- BEGIN-MARKDOWN-TOC -->
 * [Anforderungen](#anforderungen)
